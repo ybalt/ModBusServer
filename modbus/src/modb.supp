@@ -1,0 +1,42 @@
+{
+   <socketcall_sendto>
+   Memcheck:Param
+   socketcall.sendto(msg)
+   fun:send
+   ...
+}
+{
+   <socketcall_sendto>
+   Memcheck:Param
+   socketcall.send(msg)
+   fun:send
+   ...
+}
+{
+   <zsocket_bind>
+   Memcheck:Leak
+   ...
+   fun:zsocket_bind
+   ...
+}
+{
+   <zsocket_poll>
+   Memcheck:Leak
+   ...
+   fun:zmq_poll
+   ...
+}
+{
+   <zsocket_connect>
+   Memcheck:Leak
+   ...
+   fun:zsocket_connect
+   ...
+}
+{
+   <zthread_fork>
+   Memcheck:Leak
+   ...
+   fun:zthread_fork
+   ...
+}

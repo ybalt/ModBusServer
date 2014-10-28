@@ -27,3 +27,26 @@
 *.i*86
 *.x86_64
 *.hex
+
+proc_err-*
+proc_out-*
+
+# build artifacts
+
+Makefile.in
+Makefile
+*.log
+.deps
+*.m4
+autom4te.cache
+*.pid
+modbus/config.*
+stamp-h1
+compile
+
+#binaries
+
+worker
+broker
+modbusd
+modbus_fastcgi
